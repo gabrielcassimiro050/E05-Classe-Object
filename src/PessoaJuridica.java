@@ -36,8 +36,8 @@ public class PessoaJuridica extends Cliente{
         return pJuridicaStr;
     }
 
-    public boolean equals(PessoaJuridica pJuridicaComparada){
-        if(pJuridicaComparada.getCnpj() == this.cnpj) return true;
-        return false;
+    public boolean equals(Object obj){
+        PessoaJuridica pJuridicaComparada = (PessoaJuridica) obj;
+        return pJuridicaComparada.getCnpj().equals(this.cnpj);
     }
 }

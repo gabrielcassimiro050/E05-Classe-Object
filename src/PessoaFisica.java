@@ -100,8 +100,8 @@ public class PessoaFisica extends Cliente {
         return pFisicaStr;
     }
 
-    public boolean equals(PessoaFisica pFisicaComparada){
-        if(pFisicaComparada.getCpf() == this.cpf) return true;
-        return false;
+    public boolean equals(Object obj){
+        PessoaFisica pFisicaComparada = (PessoaFisica) obj;
+        return pFisicaComparada.getCpf().equals(this.cpf);
     }
 }

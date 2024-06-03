@@ -136,8 +136,8 @@ public class Conta {
         return contaStr;
     }
 
-    public boolean equals(Conta contaComparada){
-        if(contaComparada.getNumero() == this.numero) return true;
-        return false;
+    public boolean equals(Object obj){
+        Conta contaComparada = (Conta) obj;
+        return contaComparada.getNumero() == this.numero;
     }
 }
